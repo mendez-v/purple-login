@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
+
+  <link rel="icon" href="./assets/ico/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/ico/favicon.png">
+  
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  
+  <main>
+    <article class="card">
+      <img src="./assets/img/welcome-sign.svg" alt="" aria-hidden="true" class="card__image">
+      <h1 class="card__title">Log In</h1>
+      <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente ad pariatur!</p>
+      <form action="#" class="card__form" autocomplete="off">
+        <div class="field-container">
+          <label for="user-name">
+            <img src="./assets/ico/user.svg" alt="" aria-hidden="true" class="icon">
+          </label>
+          <input type="text" id="user-name" placeholder="Username" class="input-el">
+        </div>
+        <div class="field-container">
+          <label for="password">
+            <img src="./assets/ico/password.svg" alt="" aria-hidden="true" class="icon">
+          </label>
+          <input type="password" id="password" placeholder="Password" class="input-el">
+        </div>
+        <div class="notice-container">
+          <div class="check-container">
+            <input type="checkbox" id="remember" class="check-el">
+            <label for="remember">Remember Me</label>
+          </div>
+          <span class="forgot">Forgot Password</span>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn--login">LOG IN</button>
+          <button class="btn btn--signup">SIGN UP</button>
+        </div>
+      </form>
+    </article>
+  </main>
+  <footer>
+    <small class="attribution">
+      Challenge by <a href="https://icodethis.com/app" class="attribution__link" target="_blank" rel="noreferrer">iCodeThis</a> - Coded by <a href="https://github.com/mendez-v/purple-login" class="attribution__link" target="_blank" rel="noreferrer">vimp</a> 💜
+    </small>
+  </footer>
 </body>
 </html>
